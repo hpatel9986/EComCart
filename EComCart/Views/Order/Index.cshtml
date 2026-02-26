@@ -1,0 +1,44 @@
+﻿@model List<EComCart.Models.Order>
+
+<h2>Order List</h2>
+
+<a href="/Order/Add"
+   class="btn btn-primary">
+	Add Order
+</a>
+
+<table class="table table-bordered mt-3">
+
+	<tr>
+		<th>Order Id</th>
+		<th>Customer</th>
+		<th>Total</th>
+		<th>Date</th>
+		<th>Actions</th>
+	</tr>
+
+	@foreach (var item in Model)
+	{
+		<tr>
+
+			<td>@item.OrderId</td>
+
+			<td>@item.Customer?.Name</td>
+
+			<td>@item.TotalAmount</td>
+
+			<td>@item.OrderDate</td>
+
+			<td>
+
+				<a href="/Order/Delete/@item.OrderId"
+				   class="btn btn-danger">
+					Delete
+				</a>
+
+			</td>
+
+		</tr>
+	}
+
+</table>

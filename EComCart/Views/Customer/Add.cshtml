@@ -1,24 +1,25 @@
-﻿
-@model EComCart.Models.Customer
+﻿@model EComCart.Models.Customer
 
 <h2>Add Customer</h2>
 
-<form asp-action="Add">
+<form method="post">
 
-    Name:
-    <input asp-for="FullName" class="form-control" />
+	<label>Name</label>
+	<input asp-for="Name" class="form-control" />
 
-    Email:
-    <input asp-for="Email" class="form-control" />
+	<label>Email</label>
+	<input asp-for="Email" class="form-control" />
 
-    Phone:
-    <input asp-for="Phone" class="form-control" />
+	<label>Phone</label>
+	<input asp-for="Phone" class="form-control" />
 
-    Address:
-    <input asp-for="Address" class="form-control" />
+	<label>Address</label>
+	<input asp-for="Address" class="form-control" />
 
-    <br />
+	<br />
 
-    <button class="btn btn-success">Save</button>
+	<button class="btn btn-success">
+		Save
+	</button>
 
 </form>

@@ -2,24 +2,60 @@
 
 <h2>Edit Customer</h2>
 
-<form asp-action="Edit">
+<form method="post">
 
+    <!-- Hidden Id -->
     <input type="hidden" asp-for="Id" />
 
-    Name:
-    <input asp-for="FullName" class="form-control" />
+    <div class="form-group">
 
-    Email:
-    <input asp-for="Email" class="form-control" />
+        <label>Name</label>
 
-    Phone:
-    <input asp-for="Phone" class="form-control" />
+        <input asp-for="Name"
+               class="form-control" />
 
-    Address:
-    <input asp-for="Address" class="form-control" />
+        <span asp-validation-for="Name"
+              class="text-danger"></span>
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Email</label>
+
+        <input asp-for="Email"
+               class="form-control" />
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Phone</label>
+
+        <input asp-for="Phone"
+               class="form-control" />
+
+    </div>
+
+    <div class="form-group">
+
+        <label>Address</label>
+
+        <input asp-for="Address"
+               class="form-control" />
+
+    </div>
 
     <br />
 
-    <button class="btn btn-warning">Update</button>
+    <button type="submit"
+            class="btn btn-success">
+        Update Customer
+    </button>
+
+    <a href="/Customer/Index"
+       class="btn btn-secondary">
+        Cancel
+    </a>
 
 </form>

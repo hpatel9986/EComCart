@@ -2,30 +2,53 @@
 
 <h2>Customer List</h2>
 
-<a asp-action="Add" class="btn btn-primary">Add Customer</a>
+<a href="/Customer/Add"
+   class="btn btn-primary">
+	Add Customer
+</a>
 
 <table class="table table-bordered mt-3">
-    <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>Actions</th>
-    </tr>
 
-    @foreach (var c in Model)
-    {
-        <tr>
-            <td>@c.Id</td>
-            <td>@c.FullName</td>
-            <td>@c.Email</td>
-            <td>@c.Phone</td>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Phone</th>
+		<th>Actions</th>
+	</tr>
 
-            <td>
-                <a asp-action="Details" asp-route-id="@c.Id">Details</a> |
-                <a asp-action="Edit" asp-route-id="@c.Id">Edit</a> |
-                <a asp-action="Delete" asp-route-id="@c.Id">Delete</a>
-            </td>
-        </tr>
-    }
+	@foreach (var item in Model)
+	{
+		<tr>
+
+			<td>@item.Id</td>
+
+			<td>@item.Name</td>
+
+			<td>@item.Email</td>
+
+			<td>@item.Phone</td>
+
+			<td>
+
+				<a href="/Customer/Details/@item.Id"
+				   class="btn btn-info">
+					Details
+				</a>
+
+				<a href="/Customer/Edit/@item.Id"
+				   class="btn btn-warning">
+					Edit
+				</a>
+
+				<a href="/Customer/Delete/@item.Id"
+				   class="btn btn-danger">
+					Delete
+				</a>
+
+			</td>
+
+		</tr>
+	}
+
 </table>

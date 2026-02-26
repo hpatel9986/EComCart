@@ -2,48 +2,28 @@
 
 <h2>Add Product</h2>
 
-<form asp-action="Add" method="post">
+<form method="post">
 
-    <div>
+	<label>Name</label>
+	<input asp-for="Name" class="form-control" />
 
-        Name:
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" style="color:red"></span>
+	<label>Price</label>
+	<input asp-for="Price" class="form-control" />
 
-    </div>
+	<label>Quantity</label>
+	<input asp-for="Quantity" class="form-control" />
 
-    <div>
+	<label>Category</label>
 
-        Price:
-        <input asp-for="Price" class="form-control" />
-        <span asp-validation-for="Price" style="color:red"></span>
+	<select asp-for="CategoryId"
+			asp-items="ViewBag.CategoryList"
+			class="form-control">
+	</select>
 
-    </div>
+	<br />
 
-    <div>
-
-        Quantity:
-        <input asp-for="Quantity" class="form-control" />
-
-    </div>
-
-    <div>
-
-        Category:
-        <select asp-for="CategoryId"
-                asp-items="ViewBag.CategoryList"
-                class="form-control">
-
-            <option value="">-- Select Category --</option>
-
-        </select>
-
-        <span asp-validation-for="CategoryId" style="color:red"></span>
-
-    </div>
-
-    <br />
-
-    <button type="submit" class="btn btn-success">Save</button>
+	<button class="btn btn-success">
+		Save
+	</button>
 
 </form>

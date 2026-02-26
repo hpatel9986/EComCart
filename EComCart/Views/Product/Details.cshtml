@@ -2,14 +2,32 @@
 
 <h2>Product Details</h2>
 
-<p>ID: @Model.Id</p>
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <th>Price</th>
+        <td>@Model.Price</td>
+    </tr>
+    <tr>
+        <th>Quantity</th>
+        <td>@Model.Quantity</td>
+    </tr>
+    <tr>
+        <th>Category Id</th>
+        <td>@Model.CategoryId</td>
+    </tr>
+    <tr>
+        <th>Created At</th>
+        <td>@Model.CreatedAt</td>
+    </tr>
+</table>
 
-<p>Name: @Model.Name</p>
-
-<p>Price: @Model.Price</p>
-
-<p>Quantity: @Model.Quantity</p>
-
-<p>CategoryId: @Model.CategoryId</p>
-
-<a asp-action="Index">Back</a>
+<a href="/Product/Index" class="btn btn-secondary">Back</a>
+<a href="/Product/Edit/@Model.Id" class="btn btn-warning">Edit</a>

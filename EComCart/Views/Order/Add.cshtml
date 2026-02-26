@@ -1,0 +1,59 @@
+﻿<h2>Add Order</h2>
+
+<form method="post">
+
+	<label>Customer</label>
+
+	<select name="CustomerId"
+			class="form-control">
+
+		@foreach (var c in ViewBag.Customers)
+		{
+			<option value="@c.Id">
+				@c.Name
+			</option>
+		}
+
+	</select>
+
+	<br />
+
+	<table class="table">
+
+		<tr>
+			<th>Select</th>
+			<th>Product</th>
+			<th>Price</th>
+			<th>Quantity</th>
+		</tr>
+
+		@foreach (var p in ViewBag.Products)
+		{
+			<tr>
+
+				<td>
+					<input type="checkbox"
+						   name="ProductId"
+						   value="@p.Id" />
+				</td>
+
+				<td>@p.Name</td>
+
+				<td>@p.Price</td>
+
+				<td>
+					<input type="number"
+						   name="Quantity"
+						   value="1" />
+				</td>
+
+			</tr>
+		}
+
+	</table>
+
+	<button class="btn btn-success">
+		Save Order
+	</button>
+
+</form>

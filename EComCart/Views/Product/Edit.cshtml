@@ -2,43 +2,30 @@
 
 <h2>Edit Product</h2>
 
-<form asp-action="Edit" method="post">
+<form method="post">
 
-    <input type="hidden" asp-for="Id" />
+	<input type="hidden" asp-for="Id" />
 
-    <div>
+	<label>Name</label>
+	<input asp-for="Name" class="form-control" />
 
-        Name:
-        <input asp-for="Name" class="form-control" />
+	<label>Price</label>
+	<input asp-for="Price" class="form-control" />
 
-    </div>
+	<label>Quantity</label>
+	<input asp-for="Quantity" class="form-control" />
 
-    <div>
+	<label>Category</label>
 
-        Price:
-        <input asp-for="Price" class="form-control" />
+	<select asp-for="CategoryId"
+			asp-items="ViewBag.CategoryList"
+			class="form-control">
+	</select>
 
-    </div>
+	<br />
 
-    <div>
-
-        Quantity:
-        <input asp-for="Quantity" class="form-control" />
-
-    </div>
-
-    <div>
-
-        Category:
-        <select asp-for="CategoryId"
-                asp-items="ViewBag.CategoryList"
-                class="form-control">
-        </select>
-
-    </div>
-
-    <br />
-
-    <button type="submit" class="btn btn-warning">Update</button>
+	<button class="btn btn-success">
+		Update
+	</button>
 
 </form>

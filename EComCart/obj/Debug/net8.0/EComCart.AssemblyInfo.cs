@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EComCart")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a3fa7f4bcc1e00cf6cda43b722bbcae0d349544")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e2152c7029303339442f96fb594603193bc042a")]
 [assembly: System.Reflection.AssemblyProductAttribute("EComCart")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EComCart")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

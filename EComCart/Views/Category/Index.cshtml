@@ -2,28 +2,41 @@
 
 <h2>Category List</h2>
 
-<a asp-action="Add" class="btn btn-primary">Add Category</a>
+<a href="/Category/Add" class="btn btn-primary">Add Category</a>
 
 <table class="table table-bordered mt-3">
-    <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Actions</th>
-    </tr>
 
-    @foreach (var c in Model)
-    {
-        <tr>
-            <td>@c.Id</td>
-            <td>@c.Name</td>
-            <td>@c.Description</td>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Actions</th>
+	</tr>
 
-            <td>
-                <a asp-action="Details" asp-route-id="@c.Id">Details</a> |
-                <a asp-action="Edit" asp-route-id="@c.Id">Edit</a> |
-                <a asp-action="Delete" asp-route-id="@c.Id">Delete</a>
-            </td>
-        </tr>
-    }
+	@foreach (var item in Model)
+	{
+		<tr>
+
+			<td>@item.Id</td>
+
+			<td>@item.Name</td>
+
+			<td>@item.Description</td>
+
+			<td>
+
+				<a href="/Category/Edit/@item.Id" class="btn btn-warning">
+					Edit
+				</a>
+
+				<a href="/Category/Delete/@item.Id"
+				   class="btn btn-danger">
+					Delete
+				</a>
+
+			</td>
+
+		</tr>
+	}
+
 </table>

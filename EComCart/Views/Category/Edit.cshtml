@@ -2,18 +2,20 @@
 
 <h2>Edit Category</h2>
 
-<form asp-action="Edit">
+<form method="post">
 
-    <input type="hidden" asp-for="Id" />
+	<input type="hidden" asp-for="Id" />
 
-    Name:
-    <input asp-for="Name" class="form-control" />
+	<label>Name</label>
+	<input asp-for="Name" class="form-control" />
 
-    Description:
-    <input asp-for="Description" class="form-control" />
+	<label>Description</label>
+	<input asp-for="Description" class="form-control" />
 
-    <br />
+	<br />
 
-    <button class="btn btn-warning">Update</button>
+	<button type="submit" class="btn btn-success">
+		Update
+	</button>
 
 </form>

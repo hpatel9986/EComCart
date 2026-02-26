@@ -137,3 +137,4 @@ D:\WebTechnology\EComCart\EComCart\obj\Debug\net8.0\refint\EComCart.dll
 D:\WebTechnology\EComCart\EComCart\obj\Debug\net8.0\EComCart.pdb
 D:\WebTechnology\EComCart\EComCart\obj\Debug\net8.0\EComCart.genruntimeconfig.cache
 D:\WebTechnology\EComCart\EComCart\obj\Debug\net8.0\ref\EComCart.dll
+D:\WebTechnology\EComCart\EComCart\obj\Debug\net8.0\EComCart.sourcelink.json

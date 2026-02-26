@@ -8,14 +8,11 @@ namespace EComCart.Controllers
     {
         AppDbContext db = new AppDbContext();
 
-        // INDEX
         public IActionResult Index()
         {
-            var products = db.Products.ToList();
-            return View(products);
+            return View(db.Products.ToList());
         }
 
-        // ADD GET
         public IActionResult Add()
         {
             ViewBag.CategoryList =
@@ -24,68 +21,15 @@ namespace EComCart.Controllers
             return View();
         }
 
-        // ADD POST
         [HttpPost]
         public IActionResult Add(Product product)
         {
-            if (ModelState.IsValid)
-            {
-                db.Products.Add(product);
-                db.SaveChanges();
+            db.Products.Add(product);
+            db.SaveChanges();
 
-                return RedirectToAction("Index");
-            }
-
-            ViewBag.CategoryList =
-                new SelectList(db.Categories.ToList(), "Id", "Name");
-
-            return View(product);
+            return RedirectToAction("Index");
         }
 
-        // EDIT GET
-        public IActionResult Edit(int id)
-        {
-            var product = db.Products.Find(id);
-
-            if (product == null)
-                return NotFound();
-
-            ViewBag.CategoryList =
-                new SelectList(db.Categories.ToList(), "Id", "Name");
-
-            return View(product);
-        }
-
-        // EDIT POST
-        [HttpPost]
-        public IActionResult Edit(Product product)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Products.Update(product);
-                db.SaveChanges();
-
-                return RedirectToAction("Index");
-            }
-
-            ViewBag.CategoryList =
-                new SelectList(db.Categories.ToList(), "Id", "Name");
-
-            return View(product);
-        }
-
-        // DETAILS
-        public IActionResult Details(int id)
-        {
-            var product = db.Products.Find(id);
-
-            if (product == null)
-                return NotFound();
-
-            return View(product);
-        }
-
-        // DELETE
         public IActionResult Delete(int id)
         {
             var product = db.Products.Find(id);
@@ -94,6 +38,16 @@ namespace EComCart.Controllers
             db.SaveChanges();
 
             return RedirectToAction("Index");
+        }
+
+        public IActionResult Details(int id)
+        {
+            var product = db.Products.Find(id);
+
+            if (product == null)
+                return NotFound();
+
+            return View(product);
         }
     }
 }
