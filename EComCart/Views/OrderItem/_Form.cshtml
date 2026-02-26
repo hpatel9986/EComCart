@@ -1,0 +1,30 @@
+@model EComCart.ViewModels.OrderItemFormViewModel
+
+<form method="post">
+    <input type="hidden" asp-for="OrderItem.OrderItemId" />
+
+    <div class="mb-3">
+        <label asp-for="OrderItem.OrderId" class="form-label">Order</label>
+        <select asp-for="OrderItem.OrderId" asp-items="Model.Orders" class="form-control"></select>
+        <span asp-validation-for="OrderItem.OrderId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="OrderItem.ProductId" class="form-label">Product</label>
+        <select asp-for="OrderItem.ProductId" asp-items="Model.Products" class="form-control"></select>
+        <span asp-validation-for="OrderItem.ProductId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="OrderItem.Quantity" class="form-label"></label>
+        <input asp-for="OrderItem.Quantity" class="form-control" min="1" />
+        <span asp-validation-for="OrderItem.Quantity" class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

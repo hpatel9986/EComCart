@@ -1,29 +1,18 @@
-﻿using Microsoft.EntityFrameworkCore;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using Microsoft.EntityFrameworkCore;
 
 namespace EComCart.Models
 {
     public class AppDbContext : DbContext
     {
-
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options)
         {
-            options.UseSqlServer(
-                "Data Source = MSI\\HSQL;Initial Catalog = EComCart; Integrated Security = True; Encrypt=False;Trust Server Certificate=True"
-            );
         }
 
-        // Customer table (only needed for customer flow)
-
-        public DbSet<Category> Categories { get; set; }
-
-        public DbSet<Product> Products { get; set; }
-
-        public DbSet<Customer> Customers { get; set; }
-
-        public DbSet<Order> Orders { get; set; }
-
-        public DbSet<OrderItem> OrderItems { get; set; }
-
+        public DbSet<Category> Categories { get; set; } = default!;
+        public DbSet<Product> Products { get; set; } = default!;
+        public DbSet<Customer> Customers { get; set; } = default!;
+        public DbSet<Order> Orders { get; set; } = default!;
+        public DbSet<OrderItem> OrderItems { get; set; } = default!;
     }
 }

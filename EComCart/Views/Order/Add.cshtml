@@ -1,59 +1,57 @@
-﻿<h2>Add Order</h2>
+@model EComCart.ViewModels.OrderCreateViewModel
 
-<form method="post">
+<h2>Add Order</h2>
 
-	<label>Customer</label>
+<form asp-action="Add" method="post">
 
-	<select name="CustomerId"
-			class="form-control">
+    <div class="mb-3">
+        <label class="form-label">Customer</label>
+        <select asp-for="CustomerId" asp-items="Model.Customers" class="form-control">
+            <option value="">-- Select Customer --</option>
+        </select>
+        <span asp-validation-for="CustomerId" class="text-danger"></span>
+    </div>
 
-		@foreach (var c in ViewBag.Customers)
-		{
-			<option value="@c.Id">
-				@c.Name
-			</option>
-		}
+    <h4>Products</h4>
 
-	</select>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th style="width:140px;">Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+        @for (int i = 0; i < Model.Items.Count; i++)
+        {
+            <tr>
+                <td>
+                    <input asp-for="Items[i].Selected" />
+                    <input type="hidden" asp-for="Items[i].ProductId" />
+                    <input type="hidden" asp-for="Items[i].ProductName" />
+                    <input type="hidden" asp-for="Items[i].UnitPrice" />
+                </td>
+                <td>@Model.Items[i].ProductName</td>
+                <td>@Model.Items[i].UnitPrice</td>
+                <td>
+                    <input asp-for="Items[i].Quantity" class="form-control" min="1" />
+                    <span asp-validation-for="Items[i].Quantity" class="text-danger"></span>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
 
-	<br />
+    <div class="text-danger">
+        @Html.ValidationSummary()
+    </div>
 
-	<table class="table">
-
-		<tr>
-			<th>Select</th>
-			<th>Product</th>
-			<th>Price</th>
-			<th>Quantity</th>
-		</tr>
-
-		@foreach (var p in ViewBag.Products)
-		{
-			<tr>
-
-				<td>
-					<input type="checkbox"
-						   name="ProductId"
-						   value="@p.Id" />
-				</td>
-
-				<td>@p.Name</td>
-
-				<td>@p.Price</td>
-
-				<td>
-					<input type="number"
-						   name="Quantity"
-						   value="1" />
-				</td>
-
-			</tr>
-		}
-
-	</table>
-
-	<button class="btn btn-success">
-		Save Order
-	</button>
-
+    <button class="btn btn-success">Save Order</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

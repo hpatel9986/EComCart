@@ -5,11 +5,16 @@ namespace EComCart.Controllers
 {
     public class CustomerController : Controller
     {
-        AppDbContext db = new AppDbContext();
+        private readonly AppDbContext _db;
+
+        public CustomerController(AppDbContext db)
+        {
+            _db = db;
+        }
 
         public IActionResult Index()
         {
-            return View(db.Customers.ToList());
+            return View(_db.Customers.ToList());
         }
 
         public IActionResult Add()
@@ -20,25 +25,25 @@ namespace EComCart.Controllers
         [HttpPost]
         public IActionResult Add(Customer customer)
         {
-            db.Customers.Add(customer);
-            db.SaveChanges();
+            _db.Customers.Add(customer);
+            _db.SaveChanges();
 
             return RedirectToAction("Index");
         }
 
         public IActionResult Delete(int id)
         {
-            var customer = db.Customers.Find(id);
+            var customer = _db.Customers.Find(id);
 
-            db.Customers.Remove(customer);
-            db.SaveChanges();
+            _db.Customers.Remove(customer);
+            _db.SaveChanges();
 
             return RedirectToAction("Index");
         }
 
         public IActionResult Details(int id)
         {
-            var customer = db.Customers.Find(id);
+            var customer = _db.Customers.Find(id);
 
             if (customer == null)
                 return NotFound();
@@ -49,7 +54,7 @@ namespace EComCart.Controllers
         // EDIT GET
         public IActionResult Edit(int id)
         {
-            var customer = db.Customers.Find(id);
+            var customer = _db.Customers.Find(id);
 
             if (customer == null)
                 return NotFound();
@@ -64,9 +69,9 @@ namespace EComCart.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Customers.Update(customer);
+                _db.Customers.Update(customer);
 
-                db.SaveChanges();
+                _db.SaveChanges();
 
                 return RedirectToAction("Index");
             }

@@ -5,11 +5,16 @@ namespace EComCart.Controllers
 {
     public class CategoryController : Controller
     {
-        AppDbContext db = new AppDbContext();
+        private readonly AppDbContext _db;
+
+        public CategoryController(AppDbContext db)
+        {
+            _db = db;
+        }
 
         public IActionResult Index()
         {
-            return View(db.Categories.ToList());
+            return View(_db.Categories.ToList());
         }
 
         public IActionResult Add()
@@ -22,8 +27,8 @@ namespace EComCart.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Categories.Add(category);
-                db.SaveChanges();
+                _db.Categories.Add(category);
+                _db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
@@ -32,7 +37,7 @@ namespace EComCart.Controllers
 
         public IActionResult Edit(int id)
         {
-            var category = db.Categories.Find(id);
+            var category = _db.Categories.Find(id);
 
             if (category == null)
                 return NotFound();
@@ -43,25 +48,25 @@ namespace EComCart.Controllers
         [HttpPost]
         public IActionResult Edit(Category category)
         {
-            db.Categories.Update(category);
-            db.SaveChanges();
+            _db.Categories.Update(category);
+            _db.SaveChanges();
 
             return RedirectToAction("Index");
         }
 
         public IActionResult Delete(int id)
         {
-            var category = db.Categories.Find(id);
+            var category = _db.Categories.Find(id);
 
-            db.Categories.Remove(category);
-            db.SaveChanges();
+            _db.Categories.Remove(category);
+            _db.SaveChanges();
 
             return RedirectToAction("Index");
         }
 
         public IActionResult Details(int id)
         {
-            var category = db.Categories.Find(id);
+            var category = _db.Categories.Find(id);
 
             if (category == null)
                 return NotFound();

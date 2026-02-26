@@ -1,0 +1,38 @@
+@model IEnumerable<EComCart.Models.OrderItem>
+
+<h2>Order Items</h2>
+
+<p>
+    <a asp-action="Add" class="btn btn-success">Add Order Item</a>
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Order</th>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Unit Price</th>
+            <th>Total</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>Order #@item.OrderId</td>
+            <td>@item.Product?.Name</td>
+            <td>@item.Quantity</td>
+            <td>@item.UnitPrice</td>
+            <td>@item.TotalPrice</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.OrderItemId" class="btn btn-info btn-sm">Details</a>
+                <a asp-action="Edit" asp-route-id="@item.OrderItemId" class="btn btn-primary btn-sm">Edit</a>
+                <a asp-action="Delete" asp-route-id="@item.OrderItemId" class="btn btn-danger btn-sm"
+                   onclick="return confirm('Delete this order item?');">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
