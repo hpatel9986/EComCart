@@ -5,7 +5,7 @@ namespace EComCart.Models
 {
     public class AppDbContext : DbContext
     {
-        
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlServer(
@@ -17,5 +17,7 @@ namespace EComCart.Models
         public DbSet<Customer> Customers { get; set; }
 
         public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Product> Products { get; set; }
     }
 }

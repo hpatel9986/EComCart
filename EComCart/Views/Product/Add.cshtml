@@ -1,0 +1,49 @@
+﻿@model EComCart.Models.Product
+
+<h2>Add Product</h2>
+
+<form asp-action="Add" method="post">
+
+    <div>
+
+        Name:
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" style="color:red"></span>
+
+    </div>
+
+    <div>
+
+        Price:
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" style="color:red"></span>
+
+    </div>
+
+    <div>
+
+        Quantity:
+        <input asp-for="Quantity" class="form-control" />
+
+    </div>
+
+    <div>
+
+        Category:
+        <select asp-for="CategoryId"
+                asp-items="ViewBag.CategoryList"
+                class="form-control">
+
+            <option value="">-- Select Category --</option>
+
+        </select>
+
+        <span asp-validation-for="CategoryId" style="color:red"></span>
+
+    </div>
+
+    <br />
+
+    <button type="submit" class="btn btn-success">Save</button>
+
+</form>
