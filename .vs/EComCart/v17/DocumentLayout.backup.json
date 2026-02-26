@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\WebTechnology\\EComCart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|d:\\webtechnology\\ecomcart\\ecomcart\\views\\customer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|solutionrelative:ecomcart\\views\\customer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|d:\\webtechnology\\ecomcart\\ecomcart\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|solutionrelative:ecomcart\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|d:\\webtechnology\\ecomcart\\ecomcart\\migrations\\20260226001336_initcreate1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|solutionrelative:ecomcart\\migrations\\20260226001336_initcreate1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|d:\\webtechnology\\ecomcart\\ecomcart\\views\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|solutionrelative:ecomcart\\views\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|d:\\webtechnology\\ecomcart\\ecomcart\\views\\customer\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|solutionrelative:ecomcart\\views\\customer\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|d:\\webtechnology\\ecomcart\\ecomcart\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|solutionrelative:ecomcart\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|d:\\webtechnology\\ecomcart\\ecomcart\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|solutionrelative:ecomcart\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|d:\\webtechnology\\ecomcart\\ecomcart\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|solutionrelative:ecomcart\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|d:\\webtechnology\\ecomcart\\ecomcart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|solutionrelative:ecomcart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|d:\\webtechnology\\ecomcart\\ecomcart\\ecomcart.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AE31C831-2B60-42F6-A002-C8B4C5B67AD4}|EComCart\\EComCart.csproj|solutionrelative:ecomcart\\ecomcart.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20260226001336_InitCreate1.cs",
+              "DocumentMoniker": "D:\\WebTechnology\\EComCart\\EComCart\\Migrations\\20260226001336_InitCreate1.cs",
+              "RelativeDocumentMoniker": "EComCart\\Migrations\\20260226001336_InitCreate1.cs",
+              "ToolTip": "D:\\WebTechnology\\EComCart\\EComCart\\Migrations\\20260226001336_InitCreate1.cs",
+              "RelativeToolTip": "EComCart\\Migrations\\20260226001336_InitCreate1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T00:13:37.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\WebTechnology\\EComCart\\EComCart\\Views\\Customer\\Details.cshtml",
+              "RelativeDocumentMoniker": "EComCart\\Views\\Customer\\Details.cshtml",
+              "ToolTip": "D:\\WebTechnology\\EComCart\\EComCart\\Views\\Customer\\Details.cshtml",
+              "RelativeToolTip": "EComCart\\Views\\Customer\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-26T00:12:21.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\WebTechnology\\EComCart\\EComCart\\Views\\Customer\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EComCart\\Views\\Customer\\Edit.cshtml",
+              "ToolTip": "D:\\WebTechnology\\EComCart\\EComCart\\Views\\Customer\\Edit.cshtml",
+              "RelativeToolTip": "EComCart\\Views\\Customer\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-26T00:11:41.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\WebTechnology\\EComCart\\EComCart\\Views\\Customer\\Add.cshtml",
+              "RelativeDocumentMoniker": "EComCart\\Views\\Customer\\Add.cshtml",
+              "ToolTip": "D:\\WebTechnology\\EComCart\\EComCart\\Views\\Customer\\Add.cshtml",
+              "RelativeToolTip": "EComCart\\Views\\Customer\\Add.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-26T00:11:02.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\WebTechnology\\EComCart\\EComCart\\Views\\Customer\\Index.cshtml",
+              "RelativeDocumentMoniker": "EComCart\\Views\\Customer\\Index.cshtml",
+              "ToolTip": "D:\\WebTechnology\\EComCart\\EComCart\\Views\\Customer\\Index.cshtml",
+              "RelativeToolTip": "EComCart\\Views\\Customer\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-26T00:09:55.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\WebTechnology\\EComCart\\EComCart\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "EComCart\\Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\WebTechnology\\EComCart\\EComCart\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "EComCart\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowDgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T23:56:28.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\WebTechnology\\EComCart\\EComCart\\Program.cs",
+              "RelativeDocumentMoniker": "EComCart\\Program.cs",
+              "ToolTip": "D:\\WebTechnology\\EComCart\\EComCart\\Program.cs",
+              "RelativeToolTip": "EComCart\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T23:39:29.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EComCart",
+              "DocumentMoniker": "D:\\WebTechnology\\EComCart\\EComCart\\EComCart.csproj",
+              "RelativeDocumentMoniker": "EComCart\\EComCart.csproj",
+              "ToolTip": "D:\\WebTechnology\\EComCart\\EComCart\\EComCart.csproj",
+              "RelativeToolTip": "EComCart\\EComCart.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-25T23:05:17.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\WebTechnology\\EComCart\\EComCart\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "EComCart\\Models\\Customer.cs",
+              "ToolTip": "D:\\WebTechnology\\EComCart\\EComCart\\Models\\Customer.cs",
+              "RelativeToolTip": "EComCart\\Models\\Customer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwBoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T23:04:29.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "D:\\WebTechnology\\EComCart\\EComCart\\Models\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "EComCart\\Models\\AppDBContext.cs",
+              "ToolTip": "D:\\WebTechnology\\EComCart\\EComCart\\Models\\AppDBContext.cs",
+              "RelativeToolTip": "EComCart\\Models\\AppDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAACMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T23:01:42.227Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
