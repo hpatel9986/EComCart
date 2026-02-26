@@ -1,0 +1,17 @@
+﻿@model EComCart.Models.Category
+
+<h2>Add Category</h2>
+
+<form asp-action="Add">
+
+    Name:
+    <input asp-for="Name" class="form-control" />
+
+    Description:
+    <input asp-for="Description" class="form-control" />
+
+    <br />
+
+    <button class="btn btn-success">Save</button>
+
+</form>

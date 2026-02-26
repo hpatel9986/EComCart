@@ -15,5 +15,7 @@ namespace EComCart.Models
 
         // Customer table (only needed for customer flow)
         public DbSet<Customer> Customers { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
     }
 }

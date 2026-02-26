@@ -1,0 +1,19 @@
+﻿@model EComCart.Models.Category
+
+<h2>Edit Category</h2>
+
+<form asp-action="Edit">
+
+    <input type="hidden" asp-for="Id" />
+
+    Name:
+    <input asp-for="Name" class="form-control" />
+
+    Description:
+    <input asp-for="Description" class="form-control" />
+
+    <br />
+
+    <button class="btn btn-warning">Update</button>
+
+</form>
